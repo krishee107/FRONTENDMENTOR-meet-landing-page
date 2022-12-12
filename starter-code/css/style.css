@@ -1,0 +1,25 @@
+:root{
+    /*Colors*/
+    --color1:#4D96A9;
+    --color2:#855FB1;
+    --color3:#28283D;
+    --color4:#87879D;
+    --color5:#8FE3F9;
+    --color6:#D9B8FF;
+    --color7:#FAFAFA;
+
+    /*Typography*/
+    --ff: 'Red Hat Display';
+
+    --h1-fs:64px;
+    --h1-lh:61px;
+    --h1-fw:900;
+
+    --h2-fs:40px;
+    --h2-lh:44px;
+    --h2-fw:900;
+
+    --body-fs:18px;
+    --bofy-lh:26px;
+    --body-fw:500;
+}
