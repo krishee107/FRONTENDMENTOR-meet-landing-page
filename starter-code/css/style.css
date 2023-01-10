@@ -25,8 +25,9 @@
     --body-lh:26px;
     --body-fw:500;
 }
+
 /* GENERAL */
-html {
+html, body {
     width: 100vw;
     min-height: 100vh;
     padding: 0;
@@ -115,6 +116,7 @@ header {
     grid-template-columns: repeat(2,1fr);
     gap: 25px;
     margin-bottom: 64px;
+    padding: 0 24px;
 }
 
 .box {
