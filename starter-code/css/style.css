@@ -76,7 +76,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    cursor: pointer;
+    z-index: 300;
+    position: relative;
 }
 
 .button {
@@ -88,12 +89,21 @@ header {
     line-height: 26px;
     color: #fff;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .download {background-color: var(--color1);}
+
+.download:hover {
+    background-color: #71C0D4;
+}
 .download span {color: var(--color5);}
 
 .whatsit {background-color: var(--color2);}
+
+.whatsit:hover, .content .download:hover {
+    background-color: #B18BDD;
+}
 
 /* Circulo numérico */
 .number_box {padding: 64px;z-index: 3;position: relative;}
@@ -157,6 +167,7 @@ header {
     flex-direction: column;
     background-image: url("../assets/mobile/image-footer.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     gap: 25px;
     margin-top: -86px;
@@ -287,7 +298,7 @@ header {
         max-height: 250px;
     }
     
-    .boxes {padding: 0 165px 80px;}
+    .boxes {padding: 0 165px 80px;gap: 30px;}
     
     .content {
         display: grid;
