@@ -93,17 +93,12 @@ header {
 }
 
 .download {background-color: var(--color1);}
-
-.download:hover {
-    background-color: #71C0D4;
-}
+.download:hover {background-color: #71C0D4;}
 .download span {color: var(--color5);}
-
 .whatsit {background-color: var(--color2);}
+.whatsit:hover, .content .download:hover {background-color: #B18BDD;}
 
-.whatsit:hover, .content .download:hover {
-    background-color: #B18BDD;
-}
+.hero p {padding: 0 24px;}
 
 /* Circulo numérico */
 .number_box {padding: 64px;z-index: 3;position: relative;}
@@ -160,6 +155,7 @@ header {
     color: var(--color1);
 }
 
+.built {padding: 0 24px;}
 
 /* Second section -- footer */ 
 .content {
@@ -191,6 +187,10 @@ header {
 .content h2, .content p, .content .button {
     z-index: 2;
     color: white;
+}
+
+.content h2, .content p {
+    padding: 0 24px;
 }
 
 .content .download {background: var(--color2);}
