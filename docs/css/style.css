@@ -65,6 +65,9 @@ header {
 
 /* Hero */ 
 .hero {text-align: center;}
+.hero p {padding: 0 24px;}
+
+/* Hero Img */
 .tablet-hero, .desktop-hero {
     width: 100%;
     overflow: hidden;
@@ -72,6 +75,10 @@ header {
 .tablet-hero img {width: 100%}
 .desktop-hero {display: none;}
 
+
+
+
+/* buttons */
 .buttons {
     display: flex;
     flex-direction: column;
@@ -79,7 +86,6 @@ header {
     z-index: 300;
     position: relative;
 }
-
 .button {
     width: fit-content;
     align-self: center;
@@ -97,8 +103,6 @@ header {
 .download span {color: var(--color5);}
 .whatsit {background-color: var(--color2);}
 .whatsit:hover, .content .download:hover {background-color: #B18BDD;}
-
-.hero p {padding: 0 24px;}
 
 /* Circulo numérico */
 .number_box {padding: 64px;z-index: 3;position: relative;}
@@ -189,9 +193,7 @@ header {
     color: white;
 }
 
-.content h2, .content p {
-    padding: 0 24px;
-}
+.content h2, .content p {padding: 0 24px;}
 
 .content .download {background: var(--color2);}
 
