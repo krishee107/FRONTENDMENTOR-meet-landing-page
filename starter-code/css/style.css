@@ -65,7 +65,7 @@ header {
 
 /* Hero */ 
 .hero {text-align: center;}
-.tablet-hero {
+.tablet-hero, .desktop-hero {
     width: 100%;
     overflow: hidden;
 }
@@ -76,6 +76,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    cursor: pointer;
 }
 
 .button {
@@ -185,16 +186,31 @@ header {
 
 /* Tablet */
 @media (min-width: 560px) {
-    .hero {
-        margin: 0 auto;
+    h1 {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    h2{
+        font-size: 40px;
+        line-height: 44px;
     }
 
-.hero h1, .hero p {
-    max-width: 470px;
-    margin: 0 auto;
-}
-.hero h1{padding-top: 50px;}
-.hero p {padding: 25px;}
+    .hero {margin: 0 auto;}
+
+    .hero h1, .hero p {
+        max-width: 470px;
+        margin: 0 auto;
+    }
+    .hero h1{padding-top: 50px;}
+    .hero p {padding: 25px;}
     
     .buttons {
         flex-direction: row;
@@ -227,4 +243,65 @@ header {
         max-width: 450px;
         margin: 0 auto;
     }
+}
+
+/* Desktop */
+@media (min-width:1000px) {    
+    h2{
+        font-size: 40px;
+        line-height: 44px;
+    }
+    
+    h1 {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .tablet-hero {display: none;}
+    .desktop-hero {display: block;}
+
+    .hero-desktop-img {position: absolute;}
+    .hero-desktop-right {left: -30px;}
+    .hero-desktop-left {right: -30px;}
+    
+    .desktop-hero {
+        position: absolute;
+        height: 300px;
+    }
+    
+    .desktop-hero img {
+        height: 100%;
+        width: 30%;
+    }
+    .hero {position: relative;}
+
+    .box {
+        max-width: 255px;
+        max-height: 250px;
+    }
+    
+    .boxes {padding: 0 165px 80px;}
+    
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .content h2, .content p {max-width: 350px;}
+    .content p {text-align: left;}
+}
+
+/* 2k Desktop*/
+@media (min-width:2000px) {    
+    .desktop-hero {height: 350px;}
+    .desktop-hero img {width: 25%;}
 }
